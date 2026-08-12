@@ -1,0 +1,19 @@
+AWS CloudShell
+       │
+       ▼
+Docker Build
+       │
+       ▼
+Amazon ECR
+       │
+       ▼
+Amazon ECS Cluster
+       │
+       ▼
+AWS Fargate Tasks (2)
+       │
+       ▼
+Application Load Balancer
+       │
+       ▼
+Web Browser
