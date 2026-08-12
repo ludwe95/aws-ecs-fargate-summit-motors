@@ -1,0 +1,33 @@
+cat > index.html <<'EOF'
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Summit Motors | Vehicle Inventory</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#17212b}
+header{background:#0f4761;color:white;padding:28px;text-align:center}
+main{max-width:1000px;margin:auto;padding:24px}
+.intro{background:white;padding:20px;border:1px solid #d6dde3}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:20px}
+.card{background:white;border:1px solid #d6dde3;padding:18px}
+.price{color:#0f4761;font-size:22px;font-weight:bold}
+.status{display:inline-block;background:#dff2e1;color:#185c2b;padding:5px 9px}
+footer{text-align:center;padding:24px;color:#52606d}
+</style>
+</head>
+<body>
+<header><h1>Summit Motors</h1><p>Quality vehicles. Clear pricing. Reliable service.</p></header>
+<main>
+<section class="intro"><h2>Available Vehicle Inventory</h2><p>Browse the current demonstration inventory served from Amazon ECS on AWS Fargate.</p></section>
+<section class="grid">
+<article class="card"><h3>2025 City Hatch 1.0T</h3><p>Automatic | Petrol | 18,500 km</p><p class="price">R289,900</p><span class="status">Available</span></article>
+<article class="card"><h3>2024 Family SUV 2.0</h3><p>Automatic | Petrol | 31,200 km</p><p class="price">R479,900</p><span class="status">Available</span></article>
+<article class="card"><h3>2025 Utility Double Cab</h3><p>Automatic | Diesel | 12,800 km</p><p class="price">R629,900</p><span class="status">Available</span></article>
+</section>
+</main>
+<footer>Summit Motors demonstration dealership website</footer>
+</body>
+</html>
+EOF
