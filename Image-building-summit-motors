@@ -1,0 +1,2 @@
+docker build -t summit-motors-app:latest .
+docker image inspect summit-motors-app:latest
