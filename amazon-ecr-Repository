@@ -1,0 +1,4 @@
+cd ~/summit-motors-app
+aws ecr get-login-password --region af-south-1 | docker login --username AWS --password-stdin <ACCOUNT_ID>.dkr.ecr.af-south-1.amazonaws.com
+docker tag summit-motors-app:latest <ACCOUNT_ID>.dkr.ecr.af-south-1.amazonaws.com/summit-motors-app:latest
+docker push <ACCOUNT_ID>.dkr.ecr.af-south-1.amazonaws.com/summit-motors-app:latest
